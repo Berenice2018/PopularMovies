@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">PopularMovies</string>
+
+    <string name="action_sort_popular">POPULAR</string>
+    <string name="action_sort_toprated">TOP RATED</string>
+    <string name="action_sort_favorites">FAVORITES</string>
+
+    <!-- recycler card view -->
+    <string name="title">my title</string>
+    <string name="overview">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
+        eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
+        At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren,
+        no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet,
+        consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore
+        magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea
+        rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+    </string>
+
+
+    <string name="textlabel_date">relase date</string>
+    <string name="textlabel_rating">average rating</string>
+</resources>

@@ -1,0 +1,22 @@
+[
+    {
+        "merged": "/Users/administrator/Documents/UDACITY/Android_stage2/AndroidPopularMovies/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/trailer_item.xml",
+        "source": "/Users/administrator/Documents/UDACITY/Android_stage2/AndroidPopularMovies/app/src/main/res/layout/trailer_item.xml"
+    },
+    {
+        "merged": "/Users/administrator/Documents/UDACITY/Android_stage2/AndroidPopularMovies/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/movie_item.xml",
+        "source": "/Users/administrator/Documents/UDACITY/Android_stage2/AndroidPopularMovies/app/src/main/res/layout/movie_item.xml"
+    },
+    {
+        "merged": "/Users/administrator/Documents/UDACITY/Android_stage2/AndroidPopularMovies/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/activity_main.xml",
+        "source": "/Users/administrator/Documents/UDACITY/Android_stage2/AndroidPopularMovies/app/src/main/res/layout/activity_main.xml"
+    },
+    {
+        "merged": "/Users/administrator/Documents/UDACITY/Android_stage2/AndroidPopularMovies/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/activity_detail.xml",
+        "source": "/Users/administrator/Documents/UDACITY/Android_stage2/AndroidPopularMovies/app/src/main/res/layout/activity_detail.xml"
+    },
+    {
+        "merged": "/Users/administrator/Documents/UDACITY/Android_stage2/AndroidPopularMovies/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/review_item.xml",
+        "source": "/Users/administrator/Documents/UDACITY/Android_stage2/AndroidPopularMovies/app/src/main/res/layout/review_item.xml"
+    }
+]
