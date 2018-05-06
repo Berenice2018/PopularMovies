@@ -22,10 +22,13 @@ public class ActivityDetailBinding extends android.databinding.ViewDataBinding  
         sViewsWithIds.put(R.id.detail_rating, 5);
         sViewsWithIds.put(R.id.textlabelrating, 6);
         sViewsWithIds.put(R.id.youtube_fragment, 7);
-        sViewsWithIds.put(R.id.trailers_recyclerview, 8);
-        sViewsWithIds.put(R.id.detail_overview, 9);
-        sViewsWithIds.put(R.id.reviews_recyclerview, 10);
-        sViewsWithIds.put(R.id.fab_detail, 11);
+        sViewsWithIds.put(R.id.trailers_label, 8);
+        sViewsWithIds.put(R.id.trailers_recyclerview, 9);
+        sViewsWithIds.put(R.id.overview_label, 10);
+        sViewsWithIds.put(R.id.detail_overview, 11);
+        sViewsWithIds.put(R.id.reviews_label, 12);
+        sViewsWithIds.put(R.id.reviews_recyclerview, 13);
+        sViewsWithIds.put(R.id.fab_detail, 14);
     }
     // views
     @NonNull
@@ -43,11 +46,17 @@ public class ActivityDetailBinding extends android.databinding.ViewDataBinding  
     @NonNull
     private final android.widget.RelativeLayout mboundView0;
     @NonNull
+    public final android.widget.TextView overviewLabel;
+    @NonNull
+    public final android.widget.TextView reviewsLabel;
+    @NonNull
     public final android.support.v7.widget.RecyclerView reviewsRecyclerview;
     @NonNull
     public final android.widget.TextView textlabeldate;
     @NonNull
     public final android.widget.TextView textlabelrating;
+    @NonNull
+    public final android.widget.TextView trailersLabel;
     @NonNull
     public final android.support.v7.widget.RecyclerView trailersRecyclerview;
     @NonNull
@@ -59,19 +68,22 @@ public class ActivityDetailBinding extends android.databinding.ViewDataBinding  
 
     public ActivityDetailBinding(@NonNull android.databinding.DataBindingComponent bindingComponent, @NonNull View root) {
         super(bindingComponent, root, 0);
-        final Object[] bindings = mapBindings(bindingComponent, root, 12, sIncludes, sViewsWithIds);
-        this.detailOverview = (android.widget.TextView) bindings[9];
+        final Object[] bindings = mapBindings(bindingComponent, root, 15, sIncludes, sViewsWithIds);
+        this.detailOverview = (android.widget.TextView) bindings[11];
         this.detailRating = (android.widget.TextView) bindings[5];
         this.detailReleaseDate = (android.widget.TextView) bindings[3];
         this.detailThumb = (android.widget.ImageView) bindings[1];
         this.detailTitle = (android.widget.TextView) bindings[2];
-        this.fabDetail = (android.support.design.widget.FloatingActionButton) bindings[11];
+        this.fabDetail = (android.support.design.widget.FloatingActionButton) bindings[14];
         this.mboundView0 = (android.widget.RelativeLayout) bindings[0];
         this.mboundView0.setTag(null);
-        this.reviewsRecyclerview = (android.support.v7.widget.RecyclerView) bindings[10];
+        this.overviewLabel = (android.widget.TextView) bindings[10];
+        this.reviewsLabel = (android.widget.TextView) bindings[12];
+        this.reviewsRecyclerview = (android.support.v7.widget.RecyclerView) bindings[13];
         this.textlabeldate = (android.widget.TextView) bindings[4];
         this.textlabelrating = (android.widget.TextView) bindings[6];
-        this.trailersRecyclerview = (android.support.v7.widget.RecyclerView) bindings[8];
+        this.trailersLabel = (android.widget.TextView) bindings[8];
+        this.trailersRecyclerview = (android.support.v7.widget.RecyclerView) bindings[9];
         this.youtubeFragment = (android.widget.FrameLayout) bindings[7];
         setRootTag(root);
         // listeners

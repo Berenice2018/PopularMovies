@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /Users/administrator/Documents/UDACITY/Android_stage2/AndroidPopularMovies/app/src/main/AndroidManifest.xml:2:1-42:12
-INJECTED from /Users/administrator/Documents/UDACITY/Android_stage2/AndroidPopularMovies/app/src/main/AndroidManifest.xml:2:1-42:12
-INJECTED from /Users/administrator/Documents/UDACITY/Android_stage2/AndroidPopularMovies/app/src/main/AndroidManifest.xml:2:1-42:12
-INJECTED from /Users/administrator/Documents/UDACITY/Android_stage2/AndroidPopularMovies/app/src/main/AndroidManifest.xml:2:1-42:12
+ADDED from /Users/administrator/Documents/AndroidPopularMovies/app/src/main/AndroidManifest.xml:2:1-42:12
+INJECTED from /Users/administrator/Documents/AndroidPopularMovies/app/src/main/AndroidManifest.xml:2:1-42:12
+INJECTED from /Users/administrator/Documents/AndroidPopularMovies/app/src/main/AndroidManifest.xml:2:1-42:12
+INJECTED from /Users/administrator/Documents/AndroidPopularMovies/app/src/main/AndroidManifest.xml:2:1-42:12
 MERGED from [com.android.databinding:adapters:1.3.1] /Users/administrator/.gradle/caches/transforms-1/files-1.1/adapters-1.3.1.aar/a3ad96c92325da2392babfc3fe612108/AndroidManifest.xml:17:1-26:12
 MERGED from [com.android.databinding:library:1.3.1] /Users/administrator/.gradle/caches/transforms-1/files-1.1/library-1.3.1.aar/d9eba1be3bfd7bf11245945a1f7948e2/AndroidManifest.xml:17:1-26:12
 MERGED from [com.android.support:design:27.1.1] /Users/administrator/.gradle/caches/transforms-1/files-1.1/design-27.1.1.aar/8f09a4a2f8cee7321e6738e6e6d1ef54/AndroidManifest.xml:17:1-22:12
@@ -28,37 +28,37 @@ MERGED from [android.arch.lifecycle:livedata-core:1.1.1] /Users/administrator/.g
 MERGED from [android.arch.core:runtime:1.1.1] /Users/administrator/.gradle/caches/transforms-1/files-1.1/runtime-1.1.1.aar/8d598356a13f86a739a96451232ab030/AndroidManifest.xml:17:1-22:12
 MERGED from [android.arch.lifecycle:runtime:1.1.1] /Users/administrator/.gradle/caches/transforms-1/files-1.1/runtime-1.1.1.aar/44567585e8798824150348a212f9912b/AndroidManifest.xml:17:1-22:12
 MERGED from [android.arch.lifecycle:viewmodel:1.1.1] /Users/administrator/.gradle/caches/transforms-1/files-1.1/viewmodel-1.1.1.aar/c1f1559c01d1785855d9a1cc9548ea20/AndroidManifest.xml:17:1-22:12
-INJECTED from /Users/administrator/Documents/UDACITY/Android_stage2/AndroidPopularMovies/app/src/main/AndroidManifest.xml:2:1-42:12
-INJECTED from /Users/administrator/Documents/UDACITY/Android_stage2/AndroidPopularMovies/app/src/main/AndroidManifest.xml:2:1-42:12
-INJECTED from /Users/administrator/Documents/UDACITY/Android_stage2/AndroidPopularMovies/app/src/main/AndroidManifest.xml:2:1-42:12
+INJECTED from /Users/administrator/Documents/AndroidPopularMovies/app/src/main/AndroidManifest.xml:2:1-42:12
+INJECTED from /Users/administrator/Documents/AndroidPopularMovies/app/src/main/AndroidManifest.xml:2:1-42:12
+INJECTED from /Users/administrator/Documents/AndroidPopularMovies/app/src/main/AndroidManifest.xml:2:1-42:12
 	package
-		ADDED from /Users/administrator/Documents/UDACITY/Android_stage2/AndroidPopularMovies/app/src/main/AndroidManifest.xml:3:5-41
-		INJECTED from /Users/administrator/Documents/UDACITY/Android_stage2/AndroidPopularMovies/app/src/main/AndroidManifest.xml
-		INJECTED from /Users/administrator/Documents/UDACITY/Android_stage2/AndroidPopularMovies/app/src/main/AndroidManifest.xml
+		ADDED from /Users/administrator/Documents/AndroidPopularMovies/app/src/main/AndroidManifest.xml:3:5-41
+		INJECTED from /Users/administrator/Documents/AndroidPopularMovies/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/administrator/Documents/AndroidPopularMovies/app/src/main/AndroidManifest.xml
 	android:versionName
-		INJECTED from /Users/administrator/Documents/UDACITY/Android_stage2/AndroidPopularMovies/app/src/main/AndroidManifest.xml
-		ADDED from /Users/administrator/Documents/UDACITY/Android_stage2/AndroidPopularMovies/app/src/main/AndroidManifest.xml:2:1-42:12
-		INJECTED from /Users/administrator/Documents/UDACITY/Android_stage2/AndroidPopularMovies/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/administrator/Documents/AndroidPopularMovies/app/src/main/AndroidManifest.xml
+		ADDED from /Users/administrator/Documents/AndroidPopularMovies/app/src/main/AndroidManifest.xml:2:1-42:12
+		INJECTED from /Users/administrator/Documents/AndroidPopularMovies/app/src/main/AndroidManifest.xml
 	android:versionCode
-		INJECTED from /Users/administrator/Documents/UDACITY/Android_stage2/AndroidPopularMovies/app/src/main/AndroidManifest.xml
-		ADDED from /Users/administrator/Documents/UDACITY/Android_stage2/AndroidPopularMovies/app/src/main/AndroidManifest.xml:2:1-42:12
-		INJECTED from /Users/administrator/Documents/UDACITY/Android_stage2/AndroidPopularMovies/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/administrator/Documents/AndroidPopularMovies/app/src/main/AndroidManifest.xml
+		ADDED from /Users/administrator/Documents/AndroidPopularMovies/app/src/main/AndroidManifest.xml:2:1-42:12
+		INJECTED from /Users/administrator/Documents/AndroidPopularMovies/app/src/main/AndroidManifest.xml
 	xmlns:android
-		ADDED from /Users/administrator/Documents/UDACITY/Android_stage2/AndroidPopularMovies/app/src/main/AndroidManifest.xml:2:11-69
+		ADDED from /Users/administrator/Documents/AndroidPopularMovies/app/src/main/AndroidManifest.xml:2:11-69
 uses-permission#android.permission.INTERNET
-ADDED from /Users/administrator/Documents/UDACITY/Android_stage2/AndroidPopularMovies/app/src/main/AndroidManifest.xml:5:5-67
+ADDED from /Users/administrator/Documents/AndroidPopularMovies/app/src/main/AndroidManifest.xml:5:5-67
 	android:name
-		ADDED from /Users/administrator/Documents/UDACITY/Android_stage2/AndroidPopularMovies/app/src/main/AndroidManifest.xml:5:22-64
+		ADDED from /Users/administrator/Documents/AndroidPopularMovies/app/src/main/AndroidManifest.xml:5:22-64
 uses-permission#de.avkterwey.popularmovies.persistence.FAVORITES_READ
-ADDED from /Users/administrator/Documents/UDACITY/Android_stage2/AndroidPopularMovies/app/src/main/AndroidManifest.xml:6:5-92
+ADDED from /Users/administrator/Documents/AndroidPopularMovies/app/src/main/AndroidManifest.xml:6:5-92
 	android:name
-		ADDED from /Users/administrator/Documents/UDACITY/Android_stage2/AndroidPopularMovies/app/src/main/AndroidManifest.xml:6:22-90
+		ADDED from /Users/administrator/Documents/AndroidPopularMovies/app/src/main/AndroidManifest.xml:6:22-90
 uses-permission#de.avkterwey.popularmovies.persistence.FAVORITES_WRITE
-ADDED from /Users/administrator/Documents/UDACITY/Android_stage2/AndroidPopularMovies/app/src/main/AndroidManifest.xml:7:5-93
+ADDED from /Users/administrator/Documents/AndroidPopularMovies/app/src/main/AndroidManifest.xml:7:5-93
 	android:name
-		ADDED from /Users/administrator/Documents/UDACITY/Android_stage2/AndroidPopularMovies/app/src/main/AndroidManifest.xml:7:22-91
+		ADDED from /Users/administrator/Documents/AndroidPopularMovies/app/src/main/AndroidManifest.xml:7:22-91
 application
-ADDED from /Users/administrator/Documents/UDACITY/Android_stage2/AndroidPopularMovies/app/src/main/AndroidManifest.xml:10:5-40:19
+ADDED from /Users/administrator/Documents/AndroidPopularMovies/app/src/main/AndroidManifest.xml:10:5-40:19
 MERGED from [com.github.bumptech.glide:glide:4.7.1] /Users/administrator/.gradle/caches/transforms-1/files-1.1/glide-4.7.1.aar/f7d17e5c047ef8b590cbdcc0550d4d07/AndroidManifest.xml:11:5-20
 MERGED from [com.github.bumptech.glide:glide:4.7.1] /Users/administrator/.gradle/caches/transforms-1/files-1.1/glide-4.7.1.aar/f7d17e5c047ef8b590cbdcc0550d4d07/AndroidManifest.xml:11:5-20
 MERGED from [com.android.support.constraint:constraint-layout:1.1.0] /Users/administrator/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.0.aar/7f11d438e5e46dd36676e9f83872aeb7/AndroidManifest.xml:9:5-20
@@ -68,59 +68,59 @@ MERGED from [android.arch.lifecycle:extensions:1.1.1] /Users/administrator/.grad
 MERGED from [com.github.bumptech.glide:gifdecoder:4.7.1] /Users/administrator/.gradle/caches/transforms-1/files-1.1/gifdecoder-4.7.1.aar/cce998b64ccb67c58ad900188ab53ac5/AndroidManifest.xml:9:5-20
 MERGED from [com.github.bumptech.glide:gifdecoder:4.7.1] /Users/administrator/.gradle/caches/transforms-1/files-1.1/gifdecoder-4.7.1.aar/cce998b64ccb67c58ad900188ab53ac5/AndroidManifest.xml:9:5-20
 	android:supportsRtl
-		ADDED from /Users/administrator/Documents/UDACITY/Android_stage2/AndroidPopularMovies/app/src/main/AndroidManifest.xml:15:9-35
+		ADDED from /Users/administrator/Documents/AndroidPopularMovies/app/src/main/AndroidManifest.xml:15:9-35
 	android:label
-		ADDED from /Users/administrator/Documents/UDACITY/Android_stage2/AndroidPopularMovies/app/src/main/AndroidManifest.xml:13:9-41
+		ADDED from /Users/administrator/Documents/AndroidPopularMovies/app/src/main/AndroidManifest.xml:13:9-41
 	android:roundIcon
-		ADDED from /Users/administrator/Documents/UDACITY/Android_stage2/AndroidPopularMovies/app/src/main/AndroidManifest.xml:14:9-54
+		ADDED from /Users/administrator/Documents/AndroidPopularMovies/app/src/main/AndroidManifest.xml:14:9-54
 	android:icon
-		ADDED from /Users/administrator/Documents/UDACITY/Android_stage2/AndroidPopularMovies/app/src/main/AndroidManifest.xml:12:9-43
+		ADDED from /Users/administrator/Documents/AndroidPopularMovies/app/src/main/AndroidManifest.xml:12:9-43
 	android:allowBackup
-		ADDED from /Users/administrator/Documents/UDACITY/Android_stage2/AndroidPopularMovies/app/src/main/AndroidManifest.xml:11:9-35
+		ADDED from /Users/administrator/Documents/AndroidPopularMovies/app/src/main/AndroidManifest.xml:11:9-35
 	android:theme
-		ADDED from /Users/administrator/Documents/UDACITY/Android_stage2/AndroidPopularMovies/app/src/main/AndroidManifest.xml:16:9-40
+		ADDED from /Users/administrator/Documents/AndroidPopularMovies/app/src/main/AndroidManifest.xml:16:9-40
 provider#de.avkterwey.popularmovies.persistence.FavoriteMoviesContentProvider
-ADDED from /Users/administrator/Documents/UDACITY/Android_stage2/AndroidPopularMovies/app/src/main/AndroidManifest.xml:18:9-21:73
+ADDED from /Users/administrator/Documents/AndroidPopularMovies/app/src/main/AndroidManifest.xml:18:9-21:73
 	android:enabled
-		ADDED from /Users/administrator/Documents/UDACITY/Android_stage2/AndroidPopularMovies/app/src/main/AndroidManifest.xml:20:13-36
+		ADDED from /Users/administrator/Documents/AndroidPopularMovies/app/src/main/AndroidManifest.xml:20:13-36
 	android:authorities
-		ADDED from /Users/administrator/Documents/UDACITY/Android_stage2/AndroidPopularMovies/app/src/main/AndroidManifest.xml:18:19-67
+		ADDED from /Users/administrator/Documents/AndroidPopularMovies/app/src/main/AndroidManifest.xml:18:19-67
 	android:exported
-		ADDED from /Users/administrator/Documents/UDACITY/Android_stage2/AndroidPopularMovies/app/src/main/AndroidManifest.xml:19:13-37
+		ADDED from /Users/administrator/Documents/AndroidPopularMovies/app/src/main/AndroidManifest.xml:19:13-37
 	android:name
-		ADDED from /Users/administrator/Documents/UDACITY/Android_stage2/AndroidPopularMovies/app/src/main/AndroidManifest.xml:21:13-70
+		ADDED from /Users/administrator/Documents/AndroidPopularMovies/app/src/main/AndroidManifest.xml:21:13-70
 activity#de.avkterwey.popularmovies.view.MainActivity
-ADDED from /Users/administrator/Documents/UDACITY/Android_stage2/AndroidPopularMovies/app/src/main/AndroidManifest.xml:23:9-32:20
+ADDED from /Users/administrator/Documents/AndroidPopularMovies/app/src/main/AndroidManifest.xml:23:9-32:20
 	android:label
-		ADDED from /Users/administrator/Documents/UDACITY/Android_stage2/AndroidPopularMovies/app/src/main/AndroidManifest.xml:25:13-45
+		ADDED from /Users/administrator/Documents/AndroidPopularMovies/app/src/main/AndroidManifest.xml:25:13-45
 	android:theme
-		ADDED from /Users/administrator/Documents/UDACITY/Android_stage2/AndroidPopularMovies/app/src/main/AndroidManifest.xml:26:13-56
+		ADDED from /Users/administrator/Documents/AndroidPopularMovies/app/src/main/AndroidManifest.xml:26:13-56
 	android:name
-		ADDED from /Users/administrator/Documents/UDACITY/Android_stage2/AndroidPopularMovies/app/src/main/AndroidManifest.xml:24:13-46
+		ADDED from /Users/administrator/Documents/AndroidPopularMovies/app/src/main/AndroidManifest.xml:24:13-46
 intent-filter#android.intent.action.MAIN+android.intent.category.LAUNCHER
-ADDED from /Users/administrator/Documents/UDACITY/Android_stage2/AndroidPopularMovies/app/src/main/AndroidManifest.xml:27:13-31:29
+ADDED from /Users/administrator/Documents/AndroidPopularMovies/app/src/main/AndroidManifest.xml:27:13-31:29
 action#android.intent.action.MAIN
-ADDED from /Users/administrator/Documents/UDACITY/Android_stage2/AndroidPopularMovies/app/src/main/AndroidManifest.xml:28:17-69
+ADDED from /Users/administrator/Documents/AndroidPopularMovies/app/src/main/AndroidManifest.xml:28:17-69
 	android:name
-		ADDED from /Users/administrator/Documents/UDACITY/Android_stage2/AndroidPopularMovies/app/src/main/AndroidManifest.xml:28:25-66
+		ADDED from /Users/administrator/Documents/AndroidPopularMovies/app/src/main/AndroidManifest.xml:28:25-66
 category#android.intent.category.LAUNCHER
-ADDED from /Users/administrator/Documents/UDACITY/Android_stage2/AndroidPopularMovies/app/src/main/AndroidManifest.xml:30:17-77
+ADDED from /Users/administrator/Documents/AndroidPopularMovies/app/src/main/AndroidManifest.xml:30:17-77
 	android:name
-		ADDED from /Users/administrator/Documents/UDACITY/Android_stage2/AndroidPopularMovies/app/src/main/AndroidManifest.xml:30:27-74
+		ADDED from /Users/administrator/Documents/AndroidPopularMovies/app/src/main/AndroidManifest.xml:30:27-74
 activity#de.avkterwey.popularmovies.view.DetailActivity
-ADDED from /Users/administrator/Documents/UDACITY/Android_stage2/AndroidPopularMovies/app/src/main/AndroidManifest.xml:34:9-38:59
+ADDED from /Users/administrator/Documents/AndroidPopularMovies/app/src/main/AndroidManifest.xml:34:9-38:59
 	android:parentActivityName
-		ADDED from /Users/administrator/Documents/UDACITY/Android_stage2/AndroidPopularMovies/app/src/main/AndroidManifest.xml:37:13-60
+		ADDED from /Users/administrator/Documents/AndroidPopularMovies/app/src/main/AndroidManifest.xml:37:13-60
 	android:launchMode
-		ADDED from /Users/administrator/Documents/UDACITY/Android_stage2/AndroidPopularMovies/app/src/main/AndroidManifest.xml:36:13-44
+		ADDED from /Users/administrator/Documents/AndroidPopularMovies/app/src/main/AndroidManifest.xml:36:13-44
 	android:theme
-		ADDED from /Users/administrator/Documents/UDACITY/Android_stage2/AndroidPopularMovies/app/src/main/AndroidManifest.xml:38:13-56
+		ADDED from /Users/administrator/Documents/AndroidPopularMovies/app/src/main/AndroidManifest.xml:38:13-56
 	android:name
-		ADDED from /Users/administrator/Documents/UDACITY/Android_stage2/AndroidPopularMovies/app/src/main/AndroidManifest.xml:35:13-48
+		ADDED from /Users/administrator/Documents/AndroidPopularMovies/app/src/main/AndroidManifest.xml:35:13-48
 uses-sdk
-INJECTED from /Users/administrator/Documents/UDACITY/Android_stage2/AndroidPopularMovies/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
-INJECTED from /Users/administrator/Documents/UDACITY/Android_stage2/AndroidPopularMovies/app/src/main/AndroidManifest.xml
-INJECTED from /Users/administrator/Documents/UDACITY/Android_stage2/AndroidPopularMovies/app/src/main/AndroidManifest.xml
+INJECTED from /Users/administrator/Documents/AndroidPopularMovies/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from /Users/administrator/Documents/AndroidPopularMovies/app/src/main/AndroidManifest.xml
+INJECTED from /Users/administrator/Documents/AndroidPopularMovies/app/src/main/AndroidManifest.xml
 MERGED from [com.android.databinding:adapters:1.3.1] /Users/administrator/.gradle/caches/transforms-1/files-1.1/adapters-1.3.1.aar/a3ad96c92325da2392babfc3fe612108/AndroidManifest.xml:22:5-24:41
 MERGED from [com.android.databinding:adapters:1.3.1] /Users/administrator/.gradle/caches/transforms-1/files-1.1/adapters-1.3.1.aar/a3ad96c92325da2392babfc3fe612108/AndroidManifest.xml:22:5-24:41
 MERGED from [com.android.databinding:library:1.3.1] /Users/administrator/.gradle/caches/transforms-1/files-1.1/library-1.3.1.aar/d9eba1be3bfd7bf11245945a1f7948e2/AndroidManifest.xml:22:5-24:41
@@ -169,16 +169,16 @@ MERGED from [android.arch.lifecycle:runtime:1.1.1] /Users/administrator/.gradle/
 MERGED from [android.arch.lifecycle:runtime:1.1.1] /Users/administrator/.gradle/caches/transforms-1/files-1.1/runtime-1.1.1.aar/44567585e8798824150348a212f9912b/AndroidManifest.xml:20:5-44
 MERGED from [android.arch.lifecycle:viewmodel:1.1.1] /Users/administrator/.gradle/caches/transforms-1/files-1.1/viewmodel-1.1.1.aar/c1f1559c01d1785855d9a1cc9548ea20/AndroidManifest.xml:20:5-44
 MERGED from [android.arch.lifecycle:viewmodel:1.1.1] /Users/administrator/.gradle/caches/transforms-1/files-1.1/viewmodel-1.1.1.aar/c1f1559c01d1785855d9a1cc9548ea20/AndroidManifest.xml:20:5-44
-INJECTED from /Users/administrator/Documents/UDACITY/Android_stage2/AndroidPopularMovies/app/src/main/AndroidManifest.xml
-INJECTED from /Users/administrator/Documents/UDACITY/Android_stage2/AndroidPopularMovies/app/src/main/AndroidManifest.xml
+INJECTED from /Users/administrator/Documents/AndroidPopularMovies/app/src/main/AndroidManifest.xml
+INJECTED from /Users/administrator/Documents/AndroidPopularMovies/app/src/main/AndroidManifest.xml
 	android:targetSdkVersion
-		INJECTED from /Users/administrator/Documents/UDACITY/Android_stage2/AndroidPopularMovies/app/src/main/AndroidManifest.xml
-		ADDED from /Users/administrator/Documents/UDACITY/Android_stage2/AndroidPopularMovies/app/src/main/AndroidManifest.xml
-		INJECTED from /Users/administrator/Documents/UDACITY/Android_stage2/AndroidPopularMovies/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/administrator/Documents/AndroidPopularMovies/app/src/main/AndroidManifest.xml
+		ADDED from /Users/administrator/Documents/AndroidPopularMovies/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/administrator/Documents/AndroidPopularMovies/app/src/main/AndroidManifest.xml
 	android:minSdkVersion
-		INJECTED from /Users/administrator/Documents/UDACITY/Android_stage2/AndroidPopularMovies/app/src/main/AndroidManifest.xml
-		ADDED from /Users/administrator/Documents/UDACITY/Android_stage2/AndroidPopularMovies/app/src/main/AndroidManifest.xml
-		INJECTED from /Users/administrator/Documents/UDACITY/Android_stage2/AndroidPopularMovies/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/administrator/Documents/AndroidPopularMovies/app/src/main/AndroidManifest.xml
+		ADDED from /Users/administrator/Documents/AndroidPopularMovies/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/administrator/Documents/AndroidPopularMovies/app/src/main/AndroidManifest.xml
 provider#android.arch.lifecycle.ProcessLifecycleOwnerInitializer
 ADDED from [android.arch.lifecycle:extensions:1.1.1] /Users/administrator/.gradle/caches/transforms-1/files-1.1/extensions-1.1.1.aar/6642c7330fb32f28e1dc143eab6825c6/AndroidManifest.xml:23:9-27:43
 	android:authorities

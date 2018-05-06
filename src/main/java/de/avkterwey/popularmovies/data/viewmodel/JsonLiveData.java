@@ -22,6 +22,8 @@ import de.avkterwey.popularmovies.data.model.MovieItem;
 import de.avkterwey.popularmovies.persistence.FavoriteMoviesContract;
 import de.avkterwey.popularmovies.persistence.FavoriteMoviesDbHelper;
 
+import static de.avkterwey.popularmovies.persistence.FavoriteMoviesContract.FavoriteMoviesEntry.CONTENT_URI;
+
 /*
  * Created by Berenice
  */
@@ -125,6 +127,33 @@ class JsonLiveData extends LiveData<List<? extends Item>> {
         }.execute();
     }
 
+
+
+    int mCursorCount;
+
+    @SuppressLint("StaticFieldLeak")
+    public boolean isAlreadyFavorited(ContentResolver contentResolver, final String movieId){
+
+        new AsyncTask<Void, Void, Cursor>(){
+        Cursor cursor;
+            @Override
+            protected Cursor doInBackground(Void... voids) {
+                cursor = contentResolver.query(CONTENT_URI,
+                        new String[]{FavoriteMoviesContract.FavoriteMoviesEntry.COL_NAME_MOVIE_ID},
+                        "movieId=?",
+                        new String[]{movieId},
+                        null);
+                return cursor;
+            }
+
+            @Override
+            protected void onPostExecute(Cursor c){
+                mCursorCount = cursor.getCount();
+            }
+        };
+
+        return mCursorCount >= 0;
+    }
 
 
     public List<? extends Item> getFavoritesListFromCursor(){

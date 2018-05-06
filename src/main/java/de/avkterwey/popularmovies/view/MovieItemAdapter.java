@@ -43,10 +43,13 @@ public class MovieItemAdapter extends RecyclerView.Adapter<MovieItemAdapter.Item
         mItemList = itemList;
         notifyDataSetChanged();
 
-        for (int i=0; i < mItemList.size(); ++i){
-            MovieItem movieItem = (MovieItem) mItemList.get(i);
-            //Log.d(TAG, "movie = " + movieItem.getTitle() + " thumb= " + movieItem.getThumbPath());
+        /*if(mItemList != null){
+            for (int i=0; i < mItemList.size(); ++i){
+                MovieItem movieItem = (MovieItem) mItemList.get(i);
+                //Log.d(TAG, "movie = " + movieItem.getTitle() + " thumb= " + movieItem.getThumbPath());
+            }
         }
+        */
     }
 
 

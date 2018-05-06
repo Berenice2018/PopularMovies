@@ -13,18 +13,16 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:minHeight="@dimen/poster_min_height"
-            android:orientation="horizontal"
             android:layout_marginStart="@dimen/poster_horizontal_margin"
             android:layout_marginEnd="@dimen/poster_horizontal_margin"
             android:layout_marginBottom="@dimen/poster_horizontal_margin"
-            android:background="@drawable/ic_launcher_background"
-            >
+            android:orientation="horizontal"
+            android:background="@color/cardBackground">
 
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="@dimen/poster_horizontal_margin"
-                android:layout_marginEnd="@dimen/poster_horizontal_margin">
+                android:background="@color/cardBackground">
 
                 <ImageView
                     android:id="@+id/photoImageView"
@@ -39,8 +37,11 @@
                     android:id="@+id/rating"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_alignRight="@id/photoImageView"
-                    android:textColor="@color/colorAccent"
+                    android:layout_alignEnd="@id/photoImageView"
+                    android:layout_marginEnd="@dimen/poster_horizontal_margin"
+                    android:layout_marginTop="@dimen/poster_horizontal_margin"
+                    android:textColor="@color/accentColor"
+                    android:textSize="@dimen/detail_textsize_title"
                     android:contentDescription="rating"
                     android:text="@{item.rating}"
                     tools:text="@string/title"/>

@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "/Users/administrator/Documents/UDACITY/Android_stage2/AndroidPopularMovies/app/build/intermediates/incremental/mergeDebugAndroidTestResources/merged.dir/values-hy/values-hy.xml",
+            "outputFile": "/Users/administrator/Documents/AndroidPopularMovies/app/build/intermediates/incremental/mergeDebugAndroidTestResources/merged.dir/values-hy/values-hy.xml",
             "map": [
                 {
                     "source": "/Users/administrator/.gradle/caches/transforms-1/files-1.1/support-compat-27.1.1.aar/a3984c00248ce03a20a4466c343d1061/res/values-hy/values-hy.xml",

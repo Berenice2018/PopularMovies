@@ -6,8 +6,9 @@
     <dimen name="poster_thumb_height">270dp</dimen>
     <dimen name="poster_horizontal_margin">8dp</dimen>
 
-    <dimen name ="detail_general_margin">8dp</dimen>
-    <dimen name="detail_textsize_title">32sp</dimen>
+    <dimen name ="subtitle_margin">48dp</dimen>
+    <dimen name="detail_textsize_title">28sp</dimen>
+    <dimen name="detail_textsize_subtitle">36sp</dimen>
     <dimen name="detail_textsize_overview">18sp</dimen>
     <dimen name="detail_textsize_date">18sp</dimen>
     <dimen name="detail_textsize_rating">24sp</dimen>

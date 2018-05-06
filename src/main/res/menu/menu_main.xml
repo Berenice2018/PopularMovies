@@ -6,18 +6,18 @@
         android:id="@+id/action_popular"
         android:orderInCategory="100"
         android:title="@string/action_sort_popular"
-        app:showAsAction="ifRoom" />
+        app:showAsAction="always" />
 
     <item
         android:id="@+id/action_topvoted"
         android:orderInCategory="100"
         android:title="@string/action_sort_toprated"
-        app:showAsAction="ifRoom" />
+        app:showAsAction="always" />
 
     <item
         android:id="@+id/action_favorites"
         android:orderInCategory="100"
-        android:title="@string/action_sort_toprated"
-        app:showAsAction="ifRoom" />
+        android:title="@string/action_sort_favorites"
+        app:showAsAction="always" />
 
 </menu>

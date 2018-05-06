@@ -17,10 +17,13 @@ public class ActivityMainBinding extends android.databinding.ViewDataBinding  {
         sViewsWithIds = new android.util.SparseIntArray();
         sViewsWithIds.put(R.id.toolbar, 1);
         sViewsWithIds.put(R.id.recyclerview, 2);
+        sViewsWithIds.put(R.id.progressBar, 3);
     }
     // views
     @NonNull
     private final android.support.design.widget.CoordinatorLayout mboundView0;
+    @NonNull
+    public final android.widget.ProgressBar progressBar;
     @NonNull
     public final android.support.v7.widget.RecyclerView recyclerview;
     @NonNull
@@ -32,9 +35,10 @@ public class ActivityMainBinding extends android.databinding.ViewDataBinding  {
 
     public ActivityMainBinding(@NonNull android.databinding.DataBindingComponent bindingComponent, @NonNull View root) {
         super(bindingComponent, root, 0);
-        final Object[] bindings = mapBindings(bindingComponent, root, 3, sIncludes, sViewsWithIds);
+        final Object[] bindings = mapBindings(bindingComponent, root, 4, sIncludes, sViewsWithIds);
         this.mboundView0 = (android.support.design.widget.CoordinatorLayout) bindings[0];
         this.mboundView0.setTag(null);
+        this.progressBar = (android.widget.ProgressBar) bindings[3];
         this.recyclerview = (android.support.v7.widget.RecyclerView) bindings[2];
         this.toolbar = (android.support.v7.widget.Toolbar) bindings[1];
         setRootTag(root);

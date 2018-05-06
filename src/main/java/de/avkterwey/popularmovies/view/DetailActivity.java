@@ -1,7 +1,9 @@
 package de.avkterwey.popularmovies.view;
 
+import android.app.Activity;
 import android.arch.lifecycle.Observer;
 import android.arch.lifecycle.ViewModelProviders;
+import android.content.Intent;
 import android.databinding.DataBindingUtil;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
@@ -41,40 +43,81 @@ public class DetailActivity extends AppCompatActivity {
     private MovieItem mMovie = null;
     private ReviewItemAdapter mReviewAdapter;
     private TrailerItemAdapter mTrailerAdapter;
+    private String mVideoKey;
+
+    // click listener, if a Trailer thumbnail was clicked
     private IRecyclerViewClickListener mRecyclerViewClickListener = new IRecyclerViewClickListener() {
         @Override
         public void onClick(View view, int position, Item item) {
             if(item instanceof TrailerItem){
-                String videoKey = ((TrailerItem) item).getKey();
-                setupYoutubeFragment(videoKey);
+                mVideoKey = ((TrailerItem) item).getKey();
+                setupYoutubeFragment(mVideoKey);
             }
         }
     };
 
+    private byte mFavoriteListChanged;
 
 
     @Override
     protected void onCreate(Bundle savedInstanceState){
         super.onCreate(savedInstanceState);
 
+        // Bundle data
         Bundle bundleData = getIntent().getExtras();
         if (bundleData != null) {
             mMovie = bundleData.getParcelable("the movie");
         }
         Log.d(TAG, "mMovie = " + mMovie );
 
+        // Bundle data
+        if(savedInstanceState != null){
+            mVideoKey = savedInstanceState.getString("youtubeKey");
+            if(mVideoKey != null && !mVideoKey.isEmpty())
+                setupYoutubeFragment(mVideoKey);
+        }
+
         mViewModel = ViewModelProviders.of(this).get(DetailViewModel.class);
         mReviewAdapter = new ReviewItemAdapter();
         mTrailerAdapter = new TrailerItemAdapter(mRecyclerViewClickListener);
 
-        // set up viewmodel observers
+        // set up viewModel observers
         setUpObservers();
 
         // dataBinding
         setUpUi();
 
+    }
+
+
+    @Override
+    public void onRestoreInstanceState(Bundle savedInstanceState){
+        super.onRestoreInstanceState(savedInstanceState);
+        mVideoKey = savedInstanceState.getString("youtubeKey");
+        if(mVideoKey != null && !mVideoKey.isEmpty())
+            setupYoutubeFragment(mVideoKey);
 
     }
+
+
+    @Override
+    public void onSaveInstanceState(Bundle savedInstanceState){
+        super.onSaveInstanceState(savedInstanceState);
+        savedInstanceState.putString("youtubeKey", mVideoKey);
+    }
+
+
+
+    @Override
+    public void onBackPressed(){
+        Intent intent = new Intent();
+        intent.putExtra("favListChanged", mFavoriteListChanged);
+        setResult(Activity.RESULT_OK, intent);
+        finish();
+        super.onBackPressed();
+    }
+
+
 
 
     // set up UI, DataBinding, FAB click Listener etc.
@@ -109,32 +152,32 @@ public class DetailActivity extends AppCompatActivity {
         mBinding.trailersRecyclerview.setAdapter(mTrailerAdapter);
 
 
-        // FAB, add this movie to favorites
+        // FAB: add or remove a favorite movie to SQLiteDB:
         mBinding.fabDetail.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Log.d(TAG, "FAB clicked");
-                // TODO add a favorite movie to SQLiteDB:
-                mViewModel.toggleFavorite(getContentResolver());
-                // TODO on success show a Toast
-                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
+                boolean isFavorited = mViewModel.toggleFavorite(getContentResolver());
+                String message = isFavorited ? "added to your favorites" : "removed from your favorites.";
+
+                Snackbar.make(view, message, Snackbar.LENGTH_LONG)
                         .setAction("Action", null).show();
-
-
             }
         });
     }
 
 
+
     private void setUpObservers(){
         // viewModel observers
-        mViewModel.queryApi(mMovie);
+        mViewModel.queryApi(mMovie, MyConstants.ENDPOINT_TRAILERS);
+        mViewModel.queryApi(mMovie, MyConstants.ENDPOINT_REVIEWS);
 
         mViewModel.getTrailerListLiveData().observe(this, new Observer<List<? extends Item>>(){
             @Override
             public void onChanged(@Nullable List<? extends Item> items) {
 //                Log.d(TAG, " list trailer size = " + items.size());
-                mTrailerAdapter.setItemList(items);
+                if(items != null)
+                 mTrailerAdapter.setItemList(items);
             }
         });
 
@@ -142,14 +185,22 @@ public class DetailActivity extends AppCompatActivity {
             @Override
             public void onChanged(@Nullable List<? extends Item> items) {
                 //Log.d(TAG, " list reviews size = " + items.size());
-                mReviewAdapter.setItemList(items);
+                if(items != null)
+                    mReviewAdapter.setItemList(items);
             }
         });
 
-        mViewModel.getJsonSimilarVideosLiveData().observe(this, new Observer<List<? extends Item>>() {
+        /*mViewModel.getJsonSimilarVideosLiveData().observe(this, new Observer<List<? extends Item>>() {
             @Override
             public void onChanged(@Nullable List<? extends Item> items) {
-                Log.d(TAG, "similar vids size = " + items.size());
+                //Log.d(TAG, "similar vids size = " + items.size());
+            }
+        });*/
+
+        mViewModel.getFavoriteListChangedLiveData().observe(this, new Observer<Boolean>() {
+            @Override
+            public void onChanged(@Nullable Boolean favoriteListChanged) {
+                mFavoriteListChanged = (byte) (favoriteListChanged ? 1 : 0);
             }
         });
 

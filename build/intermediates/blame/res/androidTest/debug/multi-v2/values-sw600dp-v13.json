@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "/Users/administrator/Documents/UDACITY/Android_stage2/AndroidPopularMovies/app/build/intermediates/incremental/mergeDebugAndroidTestResources/merged.dir/values-sw600dp-v13/values-sw600dp-v13.xml",
+            "outputFile": "/Users/administrator/Documents/AndroidPopularMovies/app/build/intermediates/incremental/mergeDebugAndroidTestResources/merged.dir/values-sw600dp-v13/values-sw600dp-v13.xml",
             "map": [
                 {
                     "source": "/Users/administrator/.gradle/caches/transforms-1/files-1.1/design-27.1.1.aar/8f09a4a2f8cee7321e6738e6e6d1ef54/res/values-sw600dp-v13/values-sw600dp-v13.xml",

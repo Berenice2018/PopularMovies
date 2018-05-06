@@ -10,6 +10,7 @@ import android.support.annotation.NonNull;
 import java.util.List;
 
 import de.avkterwey.popularmovies.MyConstants;
+import de.avkterwey.popularmovies.Repo;
 import de.avkterwey.popularmovies.data.model.Item;
 
 /*
@@ -20,35 +21,34 @@ import de.avkterwey.popularmovies.data.model.Item;
 public class MainPageViewModel extends AndroidViewModel {
     private static final String TAG = "## MainPage ViewModel";
 
-    private JsonLiveData jsonLiveData;
+    private Repo mRepo;
+    private LiveData<List<? extends Item>> listLiveData;
     private MutableLiveData<Integer> mSortOrder = new MutableLiveData<>();
 
 
 
-    private MutableLiveData<Boolean> mFavoriteListChanged = new MutableLiveData<>();
-
-
     public MainPageViewModel(@NonNull Application application) {
         super(application);
-        jsonLiveData = new JsonLiveData();
+        mRepo = new Repo();
+        listLiveData = new MutableLiveData<>();
         setSortOrder(MyConstants.SORT_POPULAR);
          queryApi(MyConstants.ENDPOINT_POPULAR);
-        mFavoriteListChanged.setValue(false);
+
     }
 
 
 
     public LiveData<List<? extends Item>> getMovieListLiveData(){
-        return jsonLiveData; // mLiveData;
+        return listLiveData; //jsonLiveData; // mLiveData;
     }
 
 
-    public void queryApi(String apiEndpoint){
-         jsonLiveData.loadData(apiEndpoint);
+    public void queryApi(String apiEndpoint) {
+        listLiveData = mRepo.loadData(apiEndpoint);
     }
 
     public void retrieveFavoriteMovies(ContentResolver res){
-         jsonLiveData.retrieveFavorites(res);
+        listLiveData = mRepo.retrieveFavorites(res);
     }
 
 
@@ -56,17 +56,9 @@ public class MainPageViewModel extends AndroidViewModel {
     public MutableLiveData<Integer> getSortOrder( ){return mSortOrder;}
 
     public void setSortOrder(int order){
-        mSortOrder.setValue(order);
+        mSortOrder.postValue(order);
     }
 
 
-    public MutableLiveData<Boolean> getFavoriteListChanged() {
-        return mFavoriteListChanged;
-    }
-
-
-    public void setFavoriteListChanged(boolean isFav) {
-        mFavoriteListChanged.setValue(isFav);
-    }
 
 }

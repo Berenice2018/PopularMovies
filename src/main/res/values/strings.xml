@@ -17,6 +17,9 @@
     </string>
 
 
-    <string name="textlabel_date">relase date</string>
-    <string name="textlabel_rating">average rating</string>
+    <string name="textlabel_date">Relase date</string>
+    <string name="textlabel_rating">Average rating</string>
+    <string name="textlabel_reviews">User reviews</string>
+    <string name="textlabel_overview">Synopsis</string>
+    <string name="textlabel_trailers">Trailers, Clips …</string>
 </resources>

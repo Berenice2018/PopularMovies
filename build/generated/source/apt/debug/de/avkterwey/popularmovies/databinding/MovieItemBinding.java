@@ -117,7 +117,7 @@ public class MovieItemBinding extends android.databinding.ViewDataBinding  {
         if ((dirtyFlags & 0x3L) != 0) {
             // api target 1
 
-            android.databinding.adapters.TextViewBindingAdapter.setText(this.rating, itemRating);
+            this.rating.setText(itemRating);
         }
     }
     // Listener Stub Implementations

@@ -21,7 +21,7 @@ public final class FavoriteMoviesContract {
         public static final Uri CONTENT_URI = BASE_CONTENT_URI.buildUpon()
                 .appendPath(FAVORITES_PATH).build();
 
-        public static final String TABLE_NAME = "favoriteMovies";
+        public static final String TABLE_NAME = "favorites";
         public static final String COL_NAME_MOVIE_ID = "movieId";
         public static final String COL_NAME_TITLE = "title";
         public static final String COL_NAME_OVERVIEW = "overview";

@@ -10,7 +10,8 @@
 
         <ScrollView
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:background="@color/primaryDarkColor">
 
             <android.support.constraint.ConstraintLayout
                 android:layout_width="wrap_content"
@@ -20,22 +21,23 @@
                     android:id="@+id/detail_thumb"
                     android:layout_width="match_parent"
                     android:layout_height="182dp"
-                    android:layout_marginEnd="@dimen/detail_general_margin"
-                    android:layout_marginStart="@dimen/detail_general_margin"
-                    android:layout_marginTop="@dimen/detail_general_margin"
+                    android:layout_marginTop="@dimen/poster_horizontal_margin"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent"
+                    android:background="@color/black"
                     tools:srcCompat="@drawable/ic_launcher_background" />
+
 
                 <TextView
                     android:id="@+id/detail_title"
                     android:layout_width="wrap_content"
                     android:layout_height="50dp"
-                    android:layout_marginEnd="@dimen/detail_general_margin"
-                    android:layout_marginStart="@dimen/detail_general_margin"
-                    android:layout_marginTop="@dimen/detail_general_margin"
+                    android:layout_marginEnd="@dimen/poster_horizontal_margin"
+                    android:layout_marginStart="@dimen/poster_horizontal_margin"
+                    android:layout_marginTop="@dimen/poster_horizontal_margin"
                     tools:text="Title"
+                    android:textColor="@color/primaryTextColor"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@+id/detail_thumb"
@@ -43,13 +45,17 @@
 
 
 
+
+                <!-- Release date & rating  section -->
+
                 <TextView
                     android:id="@+id/detail_releaseDate"
                     android:layout_width="wrap_content"
                     android:layout_height="28dp"
-                    android:layout_marginStart="8dp"
-                    android:layout_marginTop="@dimen/detail_general_margin"
+                    android:layout_marginStart="@dimen/poster_horizontal_margin"
+                    android:layout_marginTop="@dimen/poster_horizontal_margin"
                     android:textSize="@dimen/detail_textsize_date"
+                    android:textColor="@color/primaryTextColor"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@+id/detail_title"
                     tools:text="date" />
@@ -58,8 +64,7 @@
                     android:id="@+id/textlabeldate"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginStart="@dimen/detail_general_margin"
-                    android:layout_marginTop="@dimen/detail_general_margin"
+                    android:layout_marginStart="@dimen/poster_horizontal_margin"
                     android:text="@string/textlabel_date"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@+id/detail_releaseDate" />
@@ -70,10 +75,11 @@
                     android:id="@+id/detail_rating"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginEnd="@dimen/detail_general_margin"
-                    android:layout_marginStart="@dimen/detail_general_margin"
-                    android:layout_marginTop="@dimen/detail_general_margin"
+                    android:layout_marginEnd="@dimen/poster_horizontal_margin"
+                    android:layout_marginStart="@dimen/poster_horizontal_margin"
+                    android:layout_marginTop="@dimen/poster_horizontal_margin"
                     tools:text="10.0"
+                    android:textColor="@color/primaryTextColor"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintTop_toBottomOf="@+id/detail_title"
                     android:textSize="@dimen/detail_textsize_rating"/>
@@ -81,12 +87,14 @@
                     android:id="@+id/textlabelrating"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginEnd="@dimen/detail_general_margin"
-                    android:layout_marginTop="@dimen/detail_general_margin"
+                    android:layout_marginEnd="@dimen/poster_horizontal_margin"
                     android:text="@string/textlabel_rating"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintTop_toBottomOf="@+id/detail_releaseDate" />
 
+
+
+                <!-- youtube trailer fragment section -->
                 <FrameLayout
                     android:id="@+id/youtube_fragment"
                     android:layout_width="match_parent"
@@ -95,47 +103,100 @@
                     android:layout_alignParentEnd="true"
                     app:layout_constraintTop_toBottomOf="@+id/textlabelrating"/>
 
+
+                <!-- User Trailers section -->
+                <TextView
+                    android:id="@+id/trailers_label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/subtitle_margin"
+                    android:padding="@dimen/detail_overview_padding"
+                    android:fontFamily="@font/last_call"
+                    android:textSize="@dimen/detail_textsize_subtitle"
+                    android:textColor="@color/black"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/youtube_fragment"
+                    android:text="@string/textlabel_trailers" />
+
                 <android.support.v7.widget.RecyclerView
                     android:id="@+id/trailers_recyclerview"
                     android:layout_width="match_parent"
                     android:layout_height="0dp"
-                    android:layout_marginEnd="@dimen/detail_general_margin"
-                    android:layout_marginStart="@dimen/detail_general_margin"
                     android:padding="@dimen/detail_overview_padding"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/youtube_fragment"
-
+                    app:layout_constraintTop_toBottomOf="@+id/trailers_label"
+                    android:background="@color/black"
                     />
+
+
+
+
+                <!-- Synopsis/ overview section -->
+                <TextView
+                    android:id="@+id/overview_label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/subtitle_margin"
+                    android:padding="@dimen/detail_overview_padding"
+                    android:fontFamily="@font/last_call"
+                    android:textSize="@dimen/detail_textsize_subtitle"
+                    android:textColor="@color/black"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/trailers_recyclerview"
+                    android:text="@string/textlabel_overview" />
 
                 <TextView
                     android:id="@+id/detail_overview"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginEnd="@dimen/detail_general_margin"
-                    android:layout_marginStart="@dimen/detail_general_margin"
+                    android:layout_marginEnd="@dimen/subtitle_margin"
+                    android:layout_marginStart="@dimen/subtitle_margin"
                     android:padding="@dimen/detail_overview_padding"
                     android:textSize="@dimen/detail_textsize_overview"
+                    android:lineSpacingMultiplier="1.5"
+                    android:textColor="@color/primaryTextColor"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/trailers_recyclerview"
+                    app:layout_constraintTop_toBottomOf="@+id/overview_label"
                     tools:text="@string/overview" />
 
 
-                <android.support.v7.widget.RecyclerView
-                    android:id="@+id/reviews_recyclerview"
-                    android:layout_width="match_parent"
-                    android:layout_height="300dp"
-                    android:layout_marginBottom="8dp"
-                    android:layout_marginEnd="@dimen/detail_general_margin"
-                    android:layout_marginStart="@dimen/detail_general_margin"
-                    android:padding="@dimen/detail_overview_padding"
-                    android:textSize="@dimen/detail_textsize_overview"
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintEnd_toEndOf="parent"
 
+
+                <!-- User Reviews section -->
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/detail_overview" />
+                    app:layout_constraintTop_toBottomOf="@+id/detail_overview"
+                    android:background="@color/primaryColor">
+
+                    <TextView
+                        android:id="@+id/reviews_label"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/subtitle_margin"
+                        android:fontFamily="@font/last_call"
+                        android:textAlignment="center"
+                        android:padding="@dimen/detail_overview_padding"
+                        android:textSize="@dimen/detail_textsize_subtitle"
+                        android:textColor="@color/black"
+                        android:text="@string/textlabel_reviews" />
+
+
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/reviews_recyclerview"
+                        android:layout_width="match_parent"
+                        android:layout_height="300dp"
+                        android:layout_below="@+id/reviews_label"
+                        android:layout_marginBottom="@dimen/subtitle_margin"
+                        android:textSize="@dimen/detail_textsize_overview" />
+
+                </RelativeLayout>
 
             </android.support.constraint.ConstraintLayout>
 
@@ -157,7 +218,7 @@
                 android:layout_marginBottom="16dp"
                 android:layout_marginRight="16dp"
                 android:layout_margin="@dimen/fab_margin"
-                app:srcCompat="@android:drawable/ic_dialog_email" />
+                app:srcCompat="@drawable/ic_favorite_white_24dp" />
         </LinearLayout>
     </RelativeLayout>
 </layout>
@@ -178,4 +239,12 @@
                 android:textSize="@dimen/detail_textsize_overview"
                 android:textColor="@color/colorAccent"
                 tools:text="@tools:sample/lorem"/>
+
+
+                app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/reviews_label"
+                        android:layout_marginEnd="@dimen/detail_general_margin"
+                        android:layout_marginStart="@dimen/detail_general_margin"
                 -->

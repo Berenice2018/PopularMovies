@@ -2,9 +2,8 @@ package de.avkterwey.popularmovies;
 
 
 public class MyConstants {
-    // TODO remove API key, use .gitignore
-    public static final String API_KEY = "";
-    public static final String YOUTUBE_API_KEY = "";
+    public static final String API_KEY = BuildConfig.API_KEY;
+    public static final String YOUTUBE_API_KEY = BuildConfig.YOUTUBE_API_KEY;
 
     public static final String BASE_URL = "https://api.themoviedb.org/3/movie";
     public static final String ENDPOINT_POPULAR = "popular";

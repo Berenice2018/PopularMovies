@@ -54,6 +54,7 @@ public class FavoriteMoviesDbHelper extends SQLiteOpenHelper {
                 + FavoriteMoviesContract.FavoriteMoviesEntry.COL_NAME_POSTER_PATH + " TEXT, "
                 + FavoriteMoviesContract.FavoriteMoviesEntry.COL_NAME_RELEASE_DATE + " TEXT, "
                 + FavoriteMoviesContract.FavoriteMoviesEntry.COL_NAME_VOTE_AVERAGE + " TEXT"
+                //+ ", CONSTRAINT id_constraint UNIQUE (" + FavoriteMoviesContract.FavoriteMoviesEntry.COL_NAME_MOVIE_ID +")"
                 + ");";
 
         Log.d(TAG, "SQL_CREATE_FAVORITES_TABLE = " + SQL_CREATE_FAVORITES_TABLE);

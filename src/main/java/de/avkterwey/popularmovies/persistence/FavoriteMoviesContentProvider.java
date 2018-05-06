@@ -266,6 +266,11 @@ public class FavoriteMoviesContentProvider extends ContentProvider {
                         "_id=?",
                         new String[]{id});
                 break;
+            case FAVORITE_MOVIES:
+                deletedMovies = db.delete(FavoriteMoviesContract.FavoriteMoviesEntry.TABLE_NAME,
+                        selection,
+                        selectionArgs);
+                break;
             default:
                 throw new UnsupportedOperationException("Unknown Uri " + uri);
         }
